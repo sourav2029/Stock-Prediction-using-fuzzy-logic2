@@ -1,0 +1,29 @@
+ data description:   Goyal Data from S&P index[ monthly data  
+       from  
+ YYYYMM
+ 1. index        S&P 500 index, [ used here ] 
+ 2. D12 (s&p divident yeald )   [ used here ] 
+ 3. E12 (s&p earning yeald)     [ used here ] 
+ 4. b/m(book to market price ratio)[ used here ] 
+ 5. tbl(treasury bill)              [ used here ] 
+ 6. AAA(High-Quality Corporate Bond Yield, usually long-term)
+ 7. BAA(Mid-Quality Corporate Bond Yield, usually long-term)
+                           [ both 6 and 7 are used here and 
+                            combined together: 7-6] 
+ 8. lty(long term goverment bond yield) [ used here ]
+ 9. cay(consumption wealth income ratio) [ used here ] 
+ 10. ntis(net equity expasnion)          [ not used  due to redundancy] 
+ 11. Rfree                                 [ used here ] 
+ 12. infl(inflation)                       [ used here ] 
+ 13. ltr(Long Term Return on government bond ) [ used here ] 
+ 14. corpr                                     [ used here ] 
+ 15. svar(stock variance)                        [ not used because of 
+                                                    missing values ] 
+ 16. csp(cross section premium)
+ 17. ik(investment to capital ration)             [ not used because 
+                                                    of missing value ] 
+
+below features are not considered 
+ 18. CRSP_SPvw           Center for Research in Security Press (CRSP)
+ 19. CRSP_SPvwx
+ 

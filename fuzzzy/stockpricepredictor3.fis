@@ -1,0 +1,113 @@
+[System]
+Name='stockpricepredictor3'
+Type='mamdani'
+Version=2.0
+NumInputs=11
+NumOutputs=1
+NumRules=3
+AndMethod='min'
+OrMethod='max'
+ImpMethod='min'
+AggMethod='max'
+DefuzzMethod='centroid'
+
+[Input1]
+Name='D12'
+Range=[0 60]
+NumMFs=3
+MF1='low':'trimf',[-24 0 25.7936507936508]
+MF2='medium':'trimf',[6 30 54]
+MF3='high':'trimf',[36 60 84]
+
+[Input2]
+Name='E12'
+Range=[0 45]
+NumMFs=3
+MF1='low':'trimf',[-18 0 18]
+MF2='medium':'trimf',[4.5 22.5 40.5]
+MF3='high':'trimf',[27 45 63]
+
+[Input3]
+Name='b/m'
+Range=[0 110]
+NumMFs=3
+MF1='low':'trimf',[-44 0 44]
+MF2='medium':'trimf',[11 55 99]
+MF3='high':'trimf',[66 110 154]
+
+[Input4]
+Name='tb1'
+Range=[0 1]
+NumMFs=3
+MF1='low':'trimf',[-0.4 0 0.4]
+MF2='medium':'trimf',[0.1 0.5 0.9]
+MF3='high':'trimf',[0.6 1 1.4]
+
+[Input5]
+Name='BAA_AAA'
+Range=[0 1]
+NumMFs=3
+MF1='low':'trimf',[-0.4 0 0.4]
+MF2='medium':'trimf',[0.1 0.5 0.9]
+MF3='high':'trimf',[0.6 1 1.4]
+
+[Input6]
+Name='lty'
+Range=[0 1]
+NumMFs=3
+MF1='low':'trimf',[-0.4 0 0.4]
+MF2='medium':'trimf',[0.1 0.5 0.9]
+MF3='high':'trimf',[0.6 1 1.4]
+
+[Input7]
+Name='ntis'
+Range=[-1 1]
+NumMFs=3
+MF1='low':'trimf',[-1.8 -1 -0.2]
+MF2='medium':'trimf',[-0.8 0 0.8]
+MF3='high':'trimf',[0.2 1 1.8]
+
+[Input8]
+Name='infl'
+Range=[-1 1]
+NumMFs=3
+MF1='low':'trimf',[-1.8 -1 -0.2]
+MF2='medium':'trimf',[-0.8 0 0.8]
+MF3='high':'trimf',[0.2 1 1.8]
+
+[Input9]
+Name='ltr'
+Range=[0 1]
+NumMFs=3
+MF1='low':'trimf',[-0.4 0 0.4]
+MF2='medium':'trimf',[0.1 0.5 0.9]
+MF3='high':'trimf',[0.6 1 1.4]
+
+[Input10]
+Name='corpr'
+Range=[0 1]
+NumMFs=3
+MF1='low':'trimf',[-0.4 0 0.4]
+MF2='medium':'trimf',[0.1 0.5 0.9]
+MF3='high':'trimf',[0.6 1 1.4]
+
+[Input11]
+Name='svar'
+Range=[0 1]
+NumMFs=3
+MF1='low':'trimf',[-0.4 0 0.4]
+MF2='medium':'trimf',[0.1 0.5 0.9]
+MF3='high':'trimf',[0.6 1 1.4]
+
+[Output1]
+Name='index'
+Range=[0 1]
+NumMFs=3
+MF1='low':'trimf',[-0.4 0 0.4]
+MF2='medium':'trimf',[0.1 0.5 0.9]
+MF3='high':'trimf',[0.6 1 1.4]
+
+[Rules]
+1 1 1 1 1 1 1 1 1 1 1, 1 (1) : 1
+2 3 2 2 2 1 1 1 1 1 1, 1 (1) : 1
+3 3 3 3 3 3 3 3 3 3 3, 3 (1) : 1

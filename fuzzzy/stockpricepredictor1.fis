@@ -1,0 +1,110 @@
+[System]
+Name='stockpricepredictor1'
+Type='mamdani'
+Version=2.0
+NumInputs=11
+NumOutputs=1
+NumRules=0
+AndMethod='min'
+OrMethod='max'
+ImpMethod='min'
+AggMethod='max'
+DefuzzMethod='centroid'
+
+[Input1]
+Name='D12'
+Range=[0 50]
+NumMFs=3
+MF1='mf1':'trimf',[-20 0 20]
+MF2='mf2':'trimf',[5 25 45]
+MF3='mf3':'trimf',[30 50 70]
+
+[Input2]
+Name='E12'
+Range=[0 150]
+NumMFs=3
+MF1='mf1':'trimf',[-60 0 60]
+MF2='mf2':'trimf',[15 75 135]
+MF3='mf3':'trimf',[90 150 210]
+
+[Input3]
+Name='b/m'
+Range=[0 5]
+NumMFs=3
+MF1='mf1':'trimf',[-2 0 2]
+MF2='mf2':'trimf',[0.5 2.5 4.5]
+MF3='mf3':'trimf',[3 5 7]
+
+[Input4]
+Name='tb1'
+Range=[0 1]
+NumMFs=3
+MF1='mf1':'trimf',[-0.4 0 0.4]
+MF2='mf2':'trimf',[0.1 0.5 0.9]
+MF3='mf3':'trimf',[0.6 1 1.4]
+
+[Input5]
+Name='BAA_AAA'
+Range=[0 1]
+NumMFs=3
+MF1='mf1':'trimf',[-0.4 0 0.4]
+MF2='mf2':'trimf',[0.1 0.5 0.9]
+MF3='mf3':'trimf',[0.6 1 1.4]
+
+[Input6]
+Name='lty'
+Range=[0 1]
+NumMFs=3
+MF1='mf1':'trimf',[-0.4 0 0.4]
+MF2='mf2':'trimf',[0.1 0.5 0.9]
+MF3='mf3':'trimf',[0.6 1 1.4]
+
+[Input7]
+Name='ntis'
+Range=[-1 1]
+NumMFs=3
+MF1='mf1':'trimf',[-1.8 -1 -0.2]
+MF2='mf2':'trimf',[-0.8 0 0.8]
+MF3='mf3':'trimf',[0.2 1 1.8]
+
+[Input8]
+Name='infl'
+Range=[-1 1]
+NumMFs=3
+MF1='mf1':'trimf',[-1.8 -1 -0.2]
+MF2='mf2':'trimf',[-0.8 0 0.8]
+MF3='mf3':'trimf',[0.2 1 1.8]
+
+[Input9]
+Name='ltr'
+Range=[-1 1]
+NumMFs=3
+MF1='mf1':'trimf',[-1.8 -1 -0.2]
+MF2='mf2':'trimf',[-0.8 0 0.8]
+MF3='mf3':'trimf',[0.2 1 1.8]
+
+[Input10]
+Name='corpr'
+Range=[-1 1]
+NumMFs=3
+MF1='mf1':'trimf',[-1.8 -1 -0.2]
+MF2='mf2':'trimf',[-0.8 0 0.8]
+MF3='mf3':'trimf',[0.2 1 1.8]
+
+[Input11]
+Name='svar'
+Range=[0 1]
+NumMFs=3
+MF1='mf1':'trimf',[-0.4 0 0.4]
+MF2='mf2':'trimf',[0.1 0.5 0.9]
+MF3='mf3':'trimf',[0.6 1 1.4]
+
+[Output1]
+Name='index'
+Range=[0 2500]
+NumMFs=3
+MF1='mf1':'trimf',[-1000 0 1000]
+MF2='mf2':'trimf',[250 1250 2250]
+MF3='mf3':'trimf',[1500 2500 3500]
+
+[Rules]

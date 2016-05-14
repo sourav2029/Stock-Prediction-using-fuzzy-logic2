@@ -1,0 +1,9 @@
+run in following order 
+   1    loadDATA
+   2   trainigng_n_testing
+   3   subclustering
+   4   fuzzysystem_reduced
+   5   plotmembershipfunction
+
+    
+  
